@@ -1,94 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Pagina web basica</title>
-
+    <title>Página web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-
-    <div class="head">
-
-        <div class="logo">
-            <a href="#">Logo</a>
-        </div>
-
-        <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
-           </nav>
-
-    </div>
-
-    <header class="content header">
-        <h2 class="title">Inicio</h2>
-        <p>
-            En esta agencia de viajes podras encontrar las mejores ofertas para tu increibles viajes a todo los lados del mundo! ¡Atrevete a pagar menos y a viajar más!
-        </p>
-
-        <div class="btn-home">
-            <a href="#" class="btn">Saber mas</a>
-            <a href="#" class="btn">Saber mas</a>
-        </div>
-    </header>
-
-    <section class="content sau">
-
-        <h2 class="title">Nosotros</h2>
-        <p></p>
-        
-        <div class="box-container">
-
-            <div class="box">
-                <i class="fab fa-angular"></i>
-                <h3>Viajes</h3>
-                <p>Conoce mas de nuestros servicios</p>
-            </div>
-            <div class="box">
-                <i class="fab fa-apple"></i>
-                <h3>Descuentos</h3>
-                <p>Aquí, nuestros descuentos</p>
-            </div>
-            <div class="box">
-                <i class="fab fa-android"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="content about">
-
-        <h2 class="title">Nosotros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Ut soluta similique 
-            quia reprehenderit eligendi aliquam. Sit 
-            odio impedit quibusdam. Velit corporis, 
-            optio debitis quidem ex ipsam rerum dolorem autem sequi.
-        </p>
-
-        <a href="#" class="btn">Saber mas</a>
-
-    </section>
-
-    <section class="content price">
-
-        </section>
-
-    <section class="content contact">
-        <h2 class="title">Contacto</h2>
-        <p>5762892</p>
-        <figure class="map">
-            <img src= "imagen.webp" height="220px" width="100%" alt="Agencia">
-        </figure>
-    </section>
     
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicio">Servicio</a>
+                <a href="#galeria">Portafolio</a>
+                <a href="#expertos">Especializados</a>
+                <a href="#footer">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Convertimos tus ideas en una realidad</h1>
+            <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="img/checklist.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Diseño web</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Diseño web</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Diseño web</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/cinco.avif"img-galeria" alt="Hola">
+                    <img src="img/cuatro.avif" class="img-galeria" alt="">
+                    <img src="img/ocho.jpeg" class="img-galeria" alt="">
+                    <img src="img/seis.avif" class="img-galeria" alt="">
+                    <img src="img/siete.jpeg" class="img-galeria" alt="">
+                    <img src="img/tres.avif" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/pie_chart.svg" alt="">
+                    <h3 class="n-expert">Analytics</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/search_engine.svg" alt="">
+                    <h3 class="n-expert">SEO</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/security.svg" alt="">
+                    <h3 class="n-expert">Security</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">AlexCG Design</h2>
+                    <p>Somos expertos en la creación de tus sueños</p>
+                </div>
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
