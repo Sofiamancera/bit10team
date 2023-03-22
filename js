@@ -1,14 +1,15 @@
-importar  {  useState  }  desde  'reaccionar'
-importar  './Aplicación.css'
+const hamburguer = document.querySelector('.hamburguer')
+const menu = document.querySelector('.menu-navegacion')
 
- aplicación de función ( )  {
-  const  [ contar ,  establecerCuenta ]  =  usarEstado ( 0 )
 
-  volver  (
-    < >
-      < h1 > Saludos < / h1 >
-    < / >
-  )
-}
+hamburguer.addEventListener('click', ()=>{
+    menu.classList.toggle("spread")
+})
 
-Exportar  aplicación predeterminada 
+window.addEventListener('click', e =>{
+    if(menu.classList.contains('spread') 
+        && e.target != menu && e.target != hamburguer){
+        console.log('cerrar')
+        menu.classList.toggle("spread")
+    }
+})
